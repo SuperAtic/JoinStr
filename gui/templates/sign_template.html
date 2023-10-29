@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script src="src/bootstrap.min.js"></script>
+    <script src="src/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+          background-color: rgba(0, 0, 0, 0.74);
+          color: #FFF;
+          text-align: center;
+        }
+        div.center {
+        	text-align: center;
+        }
+        a:link {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        @keyframes ldio-xwsmufaoo8a {
+            0% { transform: translate(-50%,-50%) rotate(0deg); }
+            100% { transform: translate(-50%,-50%) rotate(360deg); }
+        }
+        .ldio-xwsmufaoo8a div {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 20px solid #e15b64;
+            border-top-color: transparent;
+            border-radius: 50%;
+        }
+        .ldio-xwsmufaoo8a div {
+            animation: ldio-xwsmufaoo8a 1s linear infinite;
+            top: 100px;
+            left: 100px
+        }
+        .loadingio-spinner-rolling-y8g3k7kgi3t {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .ldio-xwsmufaoo8a {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform: translateZ(0) scale(1);
+            backface-visibility: hidden;
+            transform-origin: 0 0;
+        }
+        .ldio-xwsmufaoo8a div { box-sizing: content-box; }
+    </style>
+    <title>joinstr</title>
+  </head>
+  <body>
+    <div class=center>
+    <p>Signed PSBT published for the round: <a href="https://nostr.guru/e/{{ eventid }}">{{ eventid }}</a></p>    
+  </div>
+  {% if loading %}
+  <div class="loadingio-spinner-rolling-y8g3k7kgi3t"><div class="ldio-xwsmufaoo8a">
+    <div></div>
+    </div></div>
+<div class="center">
+    <p>Checking signed PSBTs...</p>
+</div> 
+{% endif %}
+
+  </body>
+</html>
